@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+function fun1() {
+    window.frames['right'].location.href = "login.html";
+}
+
+function fun2() {
+    
+    window.frames['right'].location.href = "register.html";
+}
+
+function fun3() {
+    
+    window.frames['right'].location.href = "aboutus.html";
+}
+</script>
+</head>
+<body>
+<frameset rows="20,*,10">
+ 	 <frame src="head.html" name="top">
+  	 <frameset cols="30,*">
+     		<frame src="sidebar.html" name=left>
+		<frame src="output.html" name=right>
+	 </frameset>
+         <frame src="footer.html" name="foot">
+  </frameset>
+<noframes>
+    <body>
+        Your browser doesn't support frames.
+    </body>
+</noframes>
+<button style="background-color:pink" onclick="fun1()">Login</button><br><br><br>
+<button style="background-color:pink" onclick="fun2()">Register</button><br><br><br>
+<button style="background-color:pink" onclick="fun3()">About us</button><br><br><br>
+</body>
+</html>
